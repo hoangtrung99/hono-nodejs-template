@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "types/*": ["./src/types/*"],
+      "routers/*": ["./src/routers/*"],
+      "libs/*": ["./src/libs/*"],
+      "services/*": ["./src/services/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
