@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.2.2
     version: 0.2.2(hono@4.3.7)
   '@supabase/supabase-js':
-    specifier: ^2.43.2
-    version: 2.43.2
+    specifier: ^2.43.4
+    version: 2.43.4
   hono:
     specifier: ^4.3.7
     version: 4.3.7
@@ -991,8 +991,8 @@ packages:
       '@supabase/node-fetch': 2.6.15
     dev: false
 
-  /@supabase/supabase-js@2.43.2:
-    resolution: {integrity: sha512-F9CljeJBo5aPucNhrLoMnpEHi5yqNZ0vH0/CL4mGy+/Ggr7FUrYErVJisa1NptViqyhs1HGNzzwjOYG6626h8g==}
+  /@supabase/supabase-js@2.43.4:
+    resolution: {integrity: sha512-/pLPaxiIsn5Vaz3s32HC6O/VNwfeddnzS0bZRpOW0AKcPuXroD8pT9G8mpiBlZfpKsMmq6k7tlhW7Sr1PAQ1lw==}
     dependencies:
       '@supabase/auth-js': 2.64.2
       '@supabase/functions-js': 2.3.1
