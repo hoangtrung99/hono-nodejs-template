@@ -23,7 +23,7 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@types/node": "^20.11.17",
-    "lefthook": "^1.6.12",
+    "lefthook": "^1.6.16",
     "tsup": "^8.0.2",
     "tsx": "^4.11.0",
     "typescript": "^5.4.5"
