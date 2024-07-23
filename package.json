@@ -3,19 +3,20 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch --env-file=.env src/index.ts",
-    "build": "tsup"
+    "build": "tsup",
+    "start": "node dist/index.cjs"
   },
   "tsup": {
-    "entry": ["src/index.ts"],
+    "entry": [
+      "src/index.ts"
+    ],
     "splitting": false,
     "sourcemap": false,
     "clean": true
   },
   "dependencies": {
     "@hono/node-server": "^1.11.1",
-    "@hono/swagger-ui": "^0.2.2",
-    "@supabase/supabase-js": "^2.43.4",
-    "hono": "^4.3.11",
+    "hono": "^4.5.1",
     "jose": "^5.3.0"
   },
   "devDependencies": {
