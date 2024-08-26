@@ -13,13 +13,13 @@ importers:
         version: 1.11.1
       '@hono/swagger-ui':
         specifier: ^0.2.2
-        version: 0.2.2(hono@4.5.1)
+        version: 0.2.2(hono@4.5.8)
       '@supabase/supabase-js':
         specifier: ^2.43.4
         version: 2.43.4
       hono:
-        specifier: ^4.5.1
-        version: 4.5.1
+        specifier: ^4.5.8
+        version: 4.5.8
       jose:
         specifier: ^5.3.0
         version: 5.3.0
@@ -898,8 +898,8 @@ packages:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
     engines: {node: '>=4'}
 
-  hono@4.5.1:
-    resolution: {integrity: sha512-6q8AugoWG5wlrjdGG8OFFiqEsPlPGjODjUik48sEJeko4Tae1UsLS2vUiYHLEJx1gJvOZa4BWkQC+urwDmkEvQ==}
+  hono@4.5.8:
+    resolution: {integrity: sha512-pqpSlcdqGkpTTRpLYU1PnCz52gVr0zVR9H5GzMyJWuKQLLEBQxh96q45QizJ2PPX8NATtz2mu31/PKW/Jt+90Q==}
     engines: {node: '>=16.0.0'}
 
   human-signals@2.1.0:
@@ -1752,9 +1752,9 @@ snapshots:
 
   '@hono/node-server@1.11.1': {}
 
-  '@hono/swagger-ui@0.2.2(hono@4.5.1)':
+  '@hono/swagger-ui@0.2.2(hono@4.5.8)':
     dependencies:
-      hono: 4.5.1
+      hono: 4.5.8
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -2226,7 +2226,7 @@ snapshots:
 
   has-flag@3.0.0: {}
 
-  hono@4.5.1: {}
+  hono@4.5.8: {}
 
   human-signals@2.1.0: {}
 
