@@ -25,4 +25,4 @@ COPY --from=builder --chown=hono:nodejs /app/package.json /app/package.json
 USER hono
 EXPOSE 3000
 
-CMD ["node", "/app/dist/index.cjs"]
+CMD ["pnpm", "start"]
