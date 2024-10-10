@@ -1,4 +1,7 @@
 FROM node:20-alpine AS base
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 
 FROM base AS builder
 
@@ -8,8 +11,7 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml tsconfig.json /app/
 COPY src /app/src/
 
-RUN npm install -g pnpm
-RUN pnpm install --frozen-lockfile && pnpm build && pnpm prune --prod
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile && pnpm build && pnpm prune --prod
 
 
 FROM base AS runner
@@ -25,4 +27,4 @@ COPY --from=builder --chown=hono:nodejs /app/package.json /app/package.json
 USER hono
 EXPOSE 3000
 
-CMD ["node", "/app/dist/index.cjs"]
+CMD ["pnpm", "start"]
